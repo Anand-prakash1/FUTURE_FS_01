@@ -1104,3 +1104,16 @@ body {
     padding: 4px 10px;
   }
 }
+
+/* Resume in Sidebar */
+.resume-item i {
+  color: #ffcc00;
+}
+
+.resume-item:hover {
+  background: #ffcc00;
+}
+
+.resume-item:hover i {
+  color: #000000;
+}
