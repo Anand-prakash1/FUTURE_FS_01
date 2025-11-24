@@ -1,33 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Anand Portfolio</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="port.css">
 </head>
+
 <body>
   <!-- Navbar -->
-<nav class="navbar">
-  <div class="nav-container">
-    <div class="logo">
-      <img src="anand.jpg" alt="Anand Logo">
-    </div>
-    <div class="nav-links" id="navLinks">
-      <a href="#about"><i class="fas fa-user"></i> About</a>
-      <a href="#education"><i class="fas fa-graduation-cap"></i> Education</a>
-      <a href="#skills"><i class="fas fa-code"></i> Skills</a>
-      <a href="#projects"><i class="fas fa-project-diagram"></i> Projects</a>
-    </div>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <img src="anand.jpg" alt="Anand Logo">
+      </div>
+      <div class="nav-links" id="navLinks">
+        <a href="#about"><i class="fas fa-user"></i> About</a>
+        <a href="#education"><i class="fas fa-graduation-cap"></i> Education</a>
+        <a href="#skills"><i class="fas fa-code"></i> Skills</a>
+        <a href="#projects"><i class="fas fa-project-diagram"></i> Projects</a>
         
-    <div class="mobile-menu-btn" id="mobileMenuBtn">
-      <span class="hamburger-line"></span>
-      <span class="hamburger-line"></span>
-      <span class="hamburger-line"></span>
+        <!-- Mobile Theme Toggle (Centered) -->
+        <div class="theme-toggle-mobile" id="themeToggleMobile">
+          <i class="fas fa-moon"></i>
+        </div>
+        
+        <!-- Desktop Theme Toggle -->
+        <div class="theme-toggle desktop-toggle" id="themeToggle">
+          <i class="fas fa-moon"></i>
+        </div>
+      </div>
+
+      <div class="mobile-menu-btn" id="mobileMenuBtn">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
+
   <!-- Social Media Sidebar -->
   <div class="social-sidebar">
     <div class="sidebar-content">
@@ -48,9 +61,9 @@
         <span class="social-name">Email</span>
       </a>
       <a href="resume.pdf" class="social-item resume-item" download>
-      <i class="fas fa-file-pdf"></i>
-      <span class="social-name">Resume</span>
-    </a>
+        <i class="fas fa-file-pdf"></i>
+        <span class="social-name">Resume</span>
+      </a>
     </div>
   </div>
 
@@ -58,323 +71,343 @@
   <main class="main-content">
     <section id="about" class="content-section">
       <h1>About Me</h1>
-<p>Hi, I'm Anand Prakash, a passionate Web Developer with a strong interest in building clean, responsive, and user-focused websites. I enjoy transforming ideas into real working projects that people can interact with, and my goal is always to create smooth user experiences with simple and elegant design.</p>
+      <p>Hi, I'm Anand Prakash, a passionate Web Developer with a strong interest in building clean, responsive, and
+        user-focused websites. I enjoy transforming ideas into real working projects that people can interact with, and
+        my goal is always to create smooth user experiences with simple and elegant design.</p>
 
-<p>Currently, I'm a student, continuously improving my development skills and exploring new technologies. I work with Python, HTML, CSS, JavaScript, and Java (basic level). I believe in learning by doing, which is why I love working on real projects instead of just theory.</p>
+      <p>Currently, I'm a student, continuously improving my development skills and exploring new technologies. I work
+        with Python, HTML, CSS, JavaScript, and Java (basic level). I believe in learning by doing, which is why I love
+        working on real projects instead of just theory.</p>
 
-<p>I'm currently developing a Personal Finance Management web application where I've completed the frontend design and now working on implementing the backend functionality. I'm also in the planning phase of a Coffee Order Website where I'll be building both frontend and backend from scratch. These projects are helping me understand the complete development lifecycle - from concept to deployment.</p>
+      <p>I'm currently developing a Personal Finance Management web application where I've completed the frontend design
+        and now working on implementing the backend functionality. I'm also in the planning phase of a Coffee Order
+        Website where I'll be building both frontend and backend from scratch. These projects are helping me understand
+        the complete development lifecycle - from concept to deployment.</p>
 
-<p>My philosophy is simple: keep learning, keep improving, and keep building.</p>
+      <p>My philosophy is simple: keep learning, keep improving, and keep building.</p>
 
-<p>Right now, I'm actively looking for internship opportunities where I can contribute to real projects, learn from experienced developers, and grow my skills in a professional environment. I'm excited to apply my knowledge and learn from industry experts.</p>
+      <p>Right now, I'm actively looking for internship opportunities where I can contribute to real projects, learn
+        from experienced developers, and grow my skills in a professional environment. I'm excited to apply my knowledge
+        and learn from industry experts.</p>
 
-<p>Outside of coding, I enjoy reading books and manga, traveling, and exercising — anything that helps me expand my perspective and stay energized.</p>
+      <p>Outside of coding, I enjoy reading books and manga, traveling, and exercising — anything that helps me expand
+        my perspective and stay energized.</p>
+    </section>
 
-<p>Thanks for visiting my portfolio — I'm constantly updating it with new projects and skills as I continue to learn and grow as a developer!</p>    </section>
-    
-<section id="education" class="content-section">
-  <h1>Education</h1>
-  
-  <div class="education-item">
-    <h3>Bachelor of Computer Applications (BCA)</h3>
-    <p class="institution">GALGOTIAS UNIVERSITY</p>
-    <p class="duration">2023 - 2026</p>
-    <p class="description">Currently pursuing my graduation in Computer Applications with focus on programming, web development, and software engineering fundamentals.</p>
-  </div>
+    <section id="education" class="content-section">
+      <h1>Education</h1>
 
-  <div class="education-item">
-    <h3>Class XII (Senior Secondary)</h3>
-    <p class="institution">RP COLLEGE</p>
-    <p class="duration">2023</p>
-    <p class="grade">Percentage: 79.8%</p>
-    <p class="board">Board: BIHAR Board</p>
-  </div>
-
-  <div class="education-item">
-    <h3>Class X (Secondary)</h3>
-    <p class="institution">STUDENT PUBLIC SCHOOL</p>
-    <p class="duration">2021</p>
-    <p class="grade">Percentage: 65.4%</p>
-    <p class="board">Board: CBSE</p>
-  </div>
-
-  <!-- Optional: Add relevant coursework -->
-  <div class="relevant-coursework">
-    <h4>Relevant Coursework:</h4>
-    <ul>
-      <li>Web Development & Design</li>
-      <li>Programming Fundamentals</li>
-      <li>Database Management Systems</li>
-      <li>Software Engineering</li>
-      <li>Computer Networks</li>
-    </ul>
-  </div>
-</section>    
-<section id="skills" class="content-section">
-  <h1>Skills & Technologies</h1>
-  
-  <div class="skills-container">
-    <div class="skill-card">
-      <div class="skill-icon">
-        <i class="fab fa-html5"></i>
+      <div class="education-item">
+        <h3>Bachelor of Computer Applications (BCA)</h3>
+        <p class="institution">GALGOTIAS UNIVERSITY</p>
+        <p class="duration">2023 - 2026</p>
+        <p class="description">Currently pursuing my graduation in Computer Applications with focus on programming, web
+          development, and software engineering fundamentals.</p>
       </div>
-      <h3>HTML5</h3>
-      <p>Semantic markup, Forms, Accessibility</p>
-      <div class="skill-level">
-        <div class="level-bar">
-          <div class="level-progress" style="width: 90%"></div>
+
+      <div class="education-item">
+        <h3>Class XII (Senior Secondary)</h3>
+        <p class="institution">RP COLLEGE</p>
+        <p class="duration">2023</p>
+        <p class="grade">Percentage: 79.8%</p>
+        <p class="board">Board: BIHAR Board</p>
+      </div>
+
+      <div class="education-item">
+        <h3>Class X (Secondary)</h3>
+        <p class="institution">STUDENT PUBLIC SCHOOL</p>
+        <p class="duration">2021</p>
+        <p class="grade">Percentage: 65.4%</p>
+        <p class="board">Board: CBSE</p>
+      </div>
+
+      <!-- Optional: Add relevant coursework -->
+      <div class="relevant-coursework">
+        <h4>Relevant Coursework:</h4>
+        <ul>
+          <li>Web Development & Design</li>
+          <li>Programming Fundamentals</li>
+          <li>Database Management Systems</li>
+          <li>Software Engineering</li>
+          <li>Computer Networks</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="skills" class="content-section">
+      <h1>Skills & Technologies</h1>
+
+      <div class="skills-container">
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fab fa-html5"></i>
+          </div>
+          <h3>HTML5</h3>
+          <p>Semantic markup, Forms, Accessibility</p>
+          <div class="skill-level">
+            <div class="level-bar">
+              <div class="level-progress" style="width: 90%"></div>
+            </div>
+            <span>90%</span>
+          </div>
         </div>
-        <span>90%</span>
-      </div>
-    </div>
 
-    <div class="skill-card">
-      <div class="skill-icon">
-        <i class="fab fa-css3-alt"></i>
-      </div>
-      <h3>CSS3</h3>
-      <p>Flexbox, Grid, Animations, Responsive Design</p>
-      <div class="skill-level">
-        <div class="level-bar">
-          <div class="level-progress" style="width: 85%"></div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fab fa-css3-alt"></i>
+          </div>
+          <h3>CSS3</h3>
+          <p>Flexbox, Grid, Animations, Responsive Design</p>
+          <div class="skill-level">
+            <div class="level-bar">
+              <div class="level-progress" style="width: 85%"></div>
+            </div>
+            <span>85%</span>
+          </div>
         </div>
-        <span>85%</span>
-      </div>
-    </div>
 
-    <div class="skill-card">
-      <div class="skill-icon">
-        <i class="fab fa-js-square"></i>
-      </div>
-      <h3>JavaScript</h3>
-      <p>ES6+, DOM Manipulation, Async Programming</p>
-      <div class="skill-level">
-        <div class="level-bar">
-          <div class="level-progress" style="width: 75%"></div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fab fa-js-square"></i>
+          </div>
+          <h3>JavaScript</h3>
+          <p>ES6+, DOM Manipulation, Async Programming</p>
+          <div class="skill-level">
+            <div class="level-bar">
+              <div class="level-progress" style="width: 75%"></div>
+            </div>
+            <span>75%</span>
+          </div>
         </div>
-        <span>75%</span>
-      </div>
-    </div>
 
-    <div class="skill-card">
-      <div class="skill-icon">
-        <i class="fab fa-python"></i>
-      </div>
-      <h3>Python</h3>
-      <p>OOP, Data Structures, Basic Algorithms</p>
-      <div class="skill-level">
-        <div class="level-bar">
-          <div class="level-progress" style="width: 80%"></div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fab fa-python"></i>
+          </div>
+          <h3>Python</h3>
+          <p>OOP, Data Structures, Basic Algorithms</p>
+          <div class="skill-level">
+            <div class="level-bar">
+              <div class="level-progress" style="width: 80%"></div>
+            </div>
+            <span>80%</span>
+          </div>
         </div>
-        <span>80%</span>
-      </div>
-    </div>
 
-    <div class="skill-card">
-      <div class="skill-icon">
-        <i class="fab fa-java"></i>
-      </div>
-      <h3>Java</h3>
-      <p>Core Java, OOP Concepts, Basic Programming</p>
-      <div class="skill-level">
-        <div class="level-bar">
-          <div class="level-progress" style="width: 70%"></div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fab fa-java"></i>
+          </div>
+          <h3>Java</h3>
+          <p>Core Java, OOP Concepts, Basic Programming</p>
+          <div class="skill-level">
+            <div class="level-bar">
+              <div class="level-progress" style="width: 70%"></div>
+            </div>
+            <span>70%</span>
+          </div>
         </div>
-        <span>70%</span>
-      </div>
-    </div>
 
-    <div class="skill-card">
-      <div class="skill-icon">
-        <i class="fab fa-cuttlefish"></i>
-      </div>
-      <h3>C Programming</h3>
-      <p>Pointers, Memory Management, Algorithms</p>
-      <div class="skill-level">
-        <div class="level-bar">
-          <div class="level-progress" style="width: 65%"></div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fab fa-cuttlefish"></i>
+          </div>
+          <h3>C Programming</h3>
+          <p>Pointers, Memory Management, Algorithms</p>
+          <div class="skill-level">
+            <div class="level-bar">
+              <div class="level-progress" style="width: 65%"></div>
+            </div>
+            <span>65%</span>
+          </div>
         </div>
-        <span>65%</span>
-      </div>
-    </div>
 
-    <div class="skill-card">
-      <div class="skill-icon">
-        <i class="fab fa-cuttlefish"></i>
-      </div>
-      <h3>C++</h3>
-      <p>OOP, STL, Basic Data Structures</p>
-      <div class="skill-level">
-        <div class="level-bar">
-          <div class="level-progress" style="width: 60%"></div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fab fa-cuttlefish"></i>
+          </div>
+          <h3>C++</h3>
+          <p>OOP, STL, Basic Data Structures</p>
+          <div class="skill-level">
+            <div class="level-bar">
+              <div class="level-progress" style="width: 60%"></div>
+            </div>
+            <span>60%</span>
+          </div>
         </div>
-        <span>60%</span>
-      </div>
-    </div>
 
-    <div class="skill-card">
-      <div class="skill-icon">
-        <i class="fab fa-git-alt"></i>
-      </div>
-      <h3>Git & GitHub</h3>
-      <p>Version Control, Collaboration, Repository Management</p>
-      <div class="skill-level">
-        <div class="level-bar">
-          <div class="level-progress" style="width: 75%"></div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fab fa-git-alt"></i>
+          </div>
+          <h3>Git & GitHub</h3>
+          <p>Version Control, Collaboration, Repository Management</p>
+          <div class="skill-level">
+            <div class="level-bar">
+              <div class="level-progress" style="width: 75%"></div>
+            </div>
+            <span>75%</span>
+          </div>
         </div>
-        <span>75%</span>
       </div>
-    </div>
-  </div>
-</section>    
-<section id="projects" class="content-section">
-  <h1>My Projects</h1>
-  
-  <div class="projects-container">
+    </section>
+
+    <section id="projects" class="content-section">
+      <h1>My Projects</h1>
+
+      <div class="projects-container">
         <!-- Project 1: Portfolio Website -->
-    <div class="project-card">
-      <div class="project-image">
-        <i class="fas fa-user"></i>
-      </div>
-      <div class="project-content">
-        <h3>Personal Portfolio</h3>
-        <p>This responsive portfolio website showcasing my skills, projects, and experience with modern design and smooth animations.</p>
-        <div class="project-tech">
-          <span class="tech-tag">HTML</span>
-          <span class="tech-tag">CSS</span>
-          <span class="tech-tag">JavaScript</span>
+        <div class="project-card">
+          <div class="project-image">
+            <i class="fas fa-user"></i>
+          </div>
+          <div class="project-content">
+            <h3>Personal Portfolio</h3>
+            <p>This responsive portfolio website showcasing my skills, projects, and experience with modern design and
+              smooth animations.</p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="https://anand-prakash1.github.io/FUTURE_FS_01/" class="project-link">Live Demo</a>
+              <a href="https://github.com/Anand-prakash1/FUTURE_FS_01" class="project-link">GitHub</a>
+            </div>
+          </div>
         </div>
-        <div class="project-links">
-          <a href="https://anand-prakash1.github.io/FUTURE_FS_01/" class="project-link">Live Demo</a>
-          <a href="https://github.com/Anand-prakash1/FUTURE_FS_01" class="project-link">GitHub</a>
-        </div>
-      </div>
-    </div>
 
+        <!-- Project 2: Pet Adoption Website -->
+        <div class="project-card">
+          <div class="project-image">
+            <i class="fas fa-paw"></i>
+          </div>
+          <div class="project-content">
+            <h3>Pet Adoption Website</h3>
+            <p>A responsive website connecting pets with loving families. Features pet listings, search functionality,
+              and adoption forms.</p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="https://anand-prakash1.github.io/Pet_Adoption/" class="project-link">Live Demo</a>
+              <a href="https://github.com/Anand-prakash1/Pet_Adoption" class="project-link">GitHub</a>
+            </div>
+          </div>
+        </div>
 
-    <!-- Project 2: Pet Adoption Website -->
-    <div class="project-card">
-      <div class="project-image">
-        <i class="fas fa-paw"></i>
-      </div>
-      <div class="project-content">
-        <h3>Pet Adoption Website</h3>
-        <p>A responsive website connecting pets with loving families. Features pet listings, search functionality, and adoption forms.</p>
-        <div class="project-tech">
-          <span class="tech-tag">HTML</span>
-          <span class="tech-tag">CSS</span>
-          <span class="tech-tag">JavaScript</span>
+        <!-- Project 3: Number Guessing Game -->
+        <div class="project-card">
+          <div class="project-image">
+            <i class="fas fa-dice"></i>
+          </div>
+          <div class="project-content">
+            <h3>Number Guessing Game</h3>
+            <p>An interactive game where users guess random numbers with hints and score tracking. Fun and engaging user
+              experience.</p>
+            <div class="project-tech">
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+            </div>
+            <div class="project-links">
+              <a href="https://anand-prakash1.github.io/Game/" class="project-link">Live Demo</a>
+              <a href="https://github.com/Anand-prakash1/Game" class="project-link">GitHub</a>
+            </div>
+          </div>
         </div>
-        <div class="project-links">
-          <a href="https://anand-prakash1.github.io/Pet_Adoption/" class="project-link">Live Demo</a>
-          <a href="https://github.com/Anand-prakash1/Pet_Adoption" class="project-link">GitHub</a>
-        </div>
-      </div>
-    </div>
 
-    <!-- Project 3: Number Guessing Game -->
-    <div class="project-card">
-      <div class="project-image">
-        <i class="fas fa-dice"></i>
-      </div>
-      <div class="project-content">
-        <h3>Number Guessing Game</h3>
-        <p>An interactive game where users guess random numbers with hints and score tracking. Fun and engaging user experience.</p>
-        <div class="project-tech">
-          <span class="tech-tag">JavaScript</span>
-          <span class="tech-tag">HTML</span>
-          <span class="tech-tag">CSS</span>
+        <!-- Project 4: Personal Finance Management -->
+        <div class="project-card">
+          <div class="project-image">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <div class="project-content">
+            <h3>Personal Finance Management</h3>
+            <p>A web application to track monthly expenses, manage budgets, and visualize spending patterns with
+              interactive charts and reports.</p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Charts.js</span>
+            </div>
+            <div class="project-links">
+              <a href="https://anand-prakash1.github.io/Personal-finance-mangement/" class="project-link">Live Demo</a>
+              <a href="https://github.com/Anand-prakash1/Personal-finance-mangement" class="project-link">GitHub</a>
+            </div>
+          </div>
         </div>
-        <div class="project-links">
-          <a href="https://anand-prakash1.github.io/Game/" class="project-link">Live Demo</a>
-          <a href="https://github.com/Anand-prakash1/Game" class="project-link">GitHub</a>
-        </div>
-      </div>
-    </div>
 
-    <!-- Project 4: Personal Finance Management -->
-    <div class="project-card">
-      <div class="project-image">
-        <i class="fas fa-chart-line"></i>
-      </div>
-      <div class="project-content">
-        <h3>Personal Finance Management</h3>
-        <p>A web application to track monthly expenses, manage budgets, and visualize spending patterns with interactive charts and reports.</p>
-        <div class="project-tech">
-          <span class="tech-tag">HTML</span>
-          <span class="tech-tag">CSS</span>
-          <span class="tech-tag">JavaScript</span>
-          <span class="tech-tag">Charts.js</span>
+        <!-- Project 5: Mini E-commerce Storefront -->
+        <div class="project-card">
+          <div class="project-image">
+            <i class="fas fa-shopping-cart"></i>
+          </div>
+          <div class="project-content">
+            <h3>Mini E-commerce Store</h3>
+            <p>A complete online storefront with product listings, shopping cart, and checkout functionality. Responsive
+              design for all devices.</p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">Live Demo</a>
+              <a href="#" class="project-link">GitHub</a>
+            </div>
+          </div>
         </div>
-        <div class="project-links">
-          <a href="https://anand-prakash1.github.io/Personal-finance-mangement/" class="project-link">Live Demo</a>
-          <a href="https://github.com/Anand-prakash1/Personal-finance-mangement" class="project-link">GitHub</a>
-        </div>
-      </div>
-    </div>
 
-    <!-- Project 5: Mini E-commerce Storefront -->
-    <div class="project-card">
-      <div class="project-image">
-        <i class="fas fa-shopping-cart"></i>
-      </div>
-      <div class="project-content">
-        <h3>Mini E-commerce Store</h3>
-        <p>A complete online storefront with product listings, shopping cart, and checkout functionality. Responsive design for all devices.</p>
-        <div class="project-tech">
-          <span class="tech-tag">HTML</span>
-          <span class="tech-tag">CSS</span>
-          <span class="tech-tag">JavaScript</span>
+        <!-- Project 6: AI Brand Rebranding -->
+        <div class="project-card">
+          <div class="project-image">
+            <i class="fas fa-robot"></i>
+          </div>
+          <div class="project-content">
+            <h3>AI Brand Website Rebrand</h3>
+            <p>Redesigned a famous brand's website using AI tools for modern UI/UX, improved navigation, and enhanced
+              user experience.</p>
+            <div class="project-tech">
+              <span class="tech-tag">AI Tools</span>
+              <span class="tech-tag">UI/UX</span>
+              <span class="tech-tag">Web Design</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">View Design</a>
+              <a href="#" class="project-link">Case Study</a>
+            </div>
+          </div>
         </div>
-        <div class="project-links">
-          <a href="#" class="project-link">Live Demo</a>
-          <a href="#" class="project-link">GitHub</a>
-        </div>
-      </div>
-    </div>
 
-    <!-- Project 6: AI Brand Rebranding -->
-    <div class="project-card">
-      <div class="project-image">
-        <i class="fas fa-robot"></i>
-      </div>
-      <div class="project-content">
-        <h3>AI Brand Website Rebrand</h3>
-        <p>Redesigned a famous brand's website using AI tools for modern UI/UX, improved navigation, and enhanced user experience.</p>
-        <div class="project-tech">
-          <span class="tech-tag">AI Tools</span>
-          <span class="tech-tag">UI/UX</span>
-          <span class="tech-tag">Web Design</span>
+        <!-- Project 7: Simple Chatbox -->
+        <div class="project-card">
+          <div class="project-image">
+            <i class="fas fa-comments"></i>
+          </div>
+          <div class="project-content">
+            <h3>Simple Chatbox</h3>
+            <p>A real-time chat application with message sending, user identification, and responsive design for
+              seamless communication.</p>
+            <div class="project-tech">
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">WebSockets</span>
+              <span class="tech-tag">UI Design</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">Live Demo</a>
+              <a href="#" class="project-link">GitHub</a>
+            </div>
+          </div>
         </div>
-        <div class="project-links">
-          <a href="#" class="project-link">View Design</a>
-          <a href="#" class="project-link">Case Study</a>
-        </div>
       </div>
-    </div>
+    </section>
+  </main>
 
-    <!-- Project 7: Simple Chatbox -->
-    <div class="project-card">
-      <div class="project-image">
-        <i class="fas fa-comments"></i>
-      </div>
-      <div class="project-content">
-        <h3>Simple Chatbox</h3>
-        <p>A real-time chat application with message sending, user identification, and responsive design for seamless communication.</p>
-        <div class="project-tech">
-          <span class="tech-tag">JavaScript</span>
-          <span class="tech-tag">WebSockets</span>
-          <span class="tech-tag">UI Design</span>
-        </div>
-        <div class="project-links">
-          <a href="#" class="project-link">Live Demo</a>
-          <a href="#" class="project-link">GitHub</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>  </main>
-
-  <script src="script.js"></script>
+  <script src="port.js"></script>
 </body>
+
 </html>
