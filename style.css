@@ -6,21 +6,22 @@
 }
 
 body {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
   min-height: 100vh;
   overflow-x: hidden;
-  color: #333;
+  color: #f0f0f0;
 }
 
 /* Navbar Styles */
 .navbar {
-  background: rgba(17, 17, 17, 0.95);
+  background: rgba(0, 0, 0, 0.95);
   backdrop-filter: blur(10px);
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1000;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 20px rgba(255, 204, 0, 0.1);
+  border-bottom: 1px solid #333;
 }
 
 .nav-container {
@@ -43,7 +44,7 @@ body {
   height: 40px;
   width: 40px;
   border-radius: 50%;
-  border: 2px solid white;
+  border: 2px solid #ffcc00;
   transition: all 0.3s ease;
   cursor: pointer;
 }
@@ -63,7 +64,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.95);
   z-index: 2000;
   justify-content: center;
   align-items: center;
@@ -80,7 +81,7 @@ body {
   max-width: 90%;
   max-height: 90%;
   border-radius: 15px;
-  box-shadow: 0 0 40px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 40px rgba(255, 204, 0, 0.3);
   transform: scale(0.7);
   transition: transform 0.3s ease;
   border: 3px solid #ffcc00;
@@ -94,7 +95,7 @@ body {
   position: absolute;
   top: 20px;
   right: 30px;
-  color: white;
+  color: #ffcc00;
   font-size: 40px;
   font-weight: bold;
   cursor: pointer;
@@ -103,7 +104,7 @@ body {
 }
 
 .modal-close:hover {
-  color: #ffcc00;
+  color: #ffffff;
   transform: scale(1.1);
 }
 
@@ -113,10 +114,10 @@ body {
   left: 0;
   width: 100%;
   text-align: center;
-  color: white;
+  color: #ffcc00;
   font-size: 18px;
   padding: 10px;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.8);
 }
 
 /* Navigation links on the RIGHT side */
@@ -128,7 +129,7 @@ body {
 }
 
 .nav-links a {
-  color: white;
+  color: #f0f0f0;
   text-decoration: none;
   font-size: 15px;
   transition: all 0.3s ease;
@@ -140,9 +141,10 @@ body {
 }
 
 .nav-links a:hover {
-  color: #111;
+  color: #000000;
   background: #ffcc00;
   transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 204, 0, 0.3);
 }
 
 .nav-links a i {
@@ -167,13 +169,13 @@ body {
 .hamburger-line {
   width: 22px;
   height: 2px;
-  background: white;
+  background: #ffcc00;
   border-radius: 2px;
   transition: all 0.3s ease;
 }
 
 .mobile-menu-btn:hover {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 204, 0, 0.1);
 }
 
 .mobile-menu-btn.active .hamburger-line:nth-child(1) {
@@ -195,12 +197,13 @@ body {
   top: 0;
   height: 100vh;
   width: 80px;
-  background: rgba(17, 17, 17, 0.95);
+  background: rgba(0, 0, 0, 0.95);
   backdrop-filter: blur(10px);
   z-index: 999;
-  box-shadow: 4px 0 20px rgba(0,0,0,0.1);
-  transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 4px 0 20px rgba(255, 204, 0, 0.1);
+  transition: width 0.2s ease-out;
   overflow: hidden;
+  border-right: 1px solid #333;
 }
 
 .social-sidebar:hover {
@@ -220,10 +223,10 @@ body {
   display: flex;
   align-items: center;
   gap: 20px;
-  color: white;
+  color: #f0f0f0;
   text-decoration: none;
   padding: 15px 25px;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease-out;
   border-radius: 0 25px 25px 0;
   margin: 8px 15px 8px 0;
   white-space: nowrap;
@@ -233,7 +236,8 @@ body {
   font-size: 22px;
   min-width: 40px;
   text-align: center;
-  transition: transform 0.3s ease;
+  transition: transform 0.2s ease-out;
+  color: #ffcc00;
 }
 
 .social-name {
@@ -241,7 +245,7 @@ body {
   font-weight: 500;
   opacity: 0;
   transform: translateX(-10px);
-  transition: all 0.3s ease 0.1s;
+  transition: all 0.15s ease-out 0.05s;
 }
 
 .social-sidebar:hover .social-name {
@@ -251,16 +255,18 @@ body {
 
 .social-item:hover {
   background: #ffcc00;
-  color: #111;
+  color: #000000;
   transform: translateX(5px);
 }
 
 .social-item:hover i {
   transform: scale(1.2);
+  color: #000000;
 }
 
 .social-item:hover .social-name {
-  font-weight: 100;
+  font-weight: 600;
+  color: #000000;
 }
 
 /* Main Content - Flexible Sections */
@@ -268,7 +274,7 @@ body {
   margin-left: 80px;
   margin-top: 70px;
   padding: 40px;
-  transition: margin-left 0.3s ease;
+  transition: margin-left 0.2s ease-out;
   min-height: 100vh;
 }
 
@@ -278,43 +284,44 @@ body {
 
 /* Flexible Section Styling */
 .content-section {
-  background: white;
+  background: rgba(30, 30, 30, 0.9);
   padding: 50px;
   border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   margin-bottom: 40px;
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255,255,255,0.2);
+  border: 1px solid #333;
   min-height: auto;
   height: auto;
-  display: block; /* Changed from flex to block */
-  overflow: hidden; /* Prevent content overflow */
+  display: block;
+  overflow: hidden;
 }
 
 .content-section:last-child {
-  margin-bottom: 0; /* Remove margin from last section */
+  margin-bottom: 0;
 }
 
 .content-section h1 {
-  color: #333;
+  color: #ffcc00;
   margin-bottom: 30px;
   font-size: 3em;
-  background: linear-gradient(45deg, #667eea, #764ba2);
+  background: linear-gradient(45deg, #ffcc00, #ffaa00);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
   font-weight: 700;
+  text-shadow: 0 2px 10px rgba(255, 204, 0, 0.3);
 }
 
 /* Improved Paragraph Styling */
 .content-section p {
-  color: #444;
+  color: #cccccc;
   line-height: 1.8;
   font-size: 1.3em;
   text-align: justify;
   margin-bottom: 25px;
   font-weight: 400;
-  word-wrap: break-word; /* Prevent long words from breaking layout */
+  word-wrap: break-word;
   overflow-wrap: break-word;
 }
 
@@ -326,21 +333,16 @@ body {
 /* First paragraph special styling */
 .content-section p:first-of-type {
   font-size: 1.4em;
-  color: #333;
+  color: #ffffff;
   font-weight: 500;
   line-height: 1.9;
-}
-
-/* Smooth scrolling for anchor links */
-html {
-  scroll-behavior: smooth;
 }
 
 /* Ensure sections have proper spacing */
 #about, #education, #skills, #projects {
   scroll-margin-top: 80px;
-  padding-top: 20px; /* Extra padding for mobile */
-  padding-bottom: 20px; /* Extra padding for mobile */
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 /* Responsive Design */
@@ -422,7 +424,7 @@ html {
     top: 70px;
     left: 0;
     width: 100%;
-    background: rgba(17, 17, 17, 0.98);
+    background: rgba(0, 0, 0, 0.98);
     backdrop-filter: blur(20px);
     flex-direction: column;
     gap: 0;
@@ -431,8 +433,9 @@ html {
     opacity: 0;
     visibility: hidden;
     transition: all 0.3s ease;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    box-shadow: 0 10px 30px rgba(255, 204, 0, 0.2);
     z-index: 1001;
+    border-top: 1px solid #333;
   }
 
   .nav-links.active {
@@ -447,13 +450,14 @@ html {
     border-radius: 10px;
     justify-content: flex-start;
     font-size: 15px;
-    border: 1px solid rgba(255,255,255,0.1);
+    border: 1px solid #333;
   }
 
   .nav-links a:hover {
     background: #ffcc00;
-    color: #111;
+    color: #000000;
     transform: translateX(10px);
+    border-color: #ffcc00;
   }
 
   /* Image Modal for Mobile */
@@ -480,6 +484,8 @@ html {
     top: auto;
     bottom: 0;
     border-radius: 20px 20px 0 0;
+    border-right: none;
+    border-top: 1px solid #333;
   }
 
   .sidebar-content {
@@ -525,7 +531,7 @@ html {
     margin-left: 0;
     margin-bottom: 80px;
     margin-top: 65px;
-    padding: 20px;
+    padding: 25px;
   }
 
   .social-sidebar:hover ~ .main-content {
@@ -533,7 +539,7 @@ html {
   }
 
   .content-section {
-    padding: 25px;
+    padding: 30px;
     margin-bottom: 25px;
   }
 
@@ -612,11 +618,11 @@ html {
   .main-content {
     margin-bottom: 75px;
     margin-top: 60px;
-    padding: 15px;
+    padding: 20px;
   }
 
   .content-section {
-    padding: 20px;
+    padding: 25px;
     margin-bottom: 20px;
   }
 
@@ -675,62 +681,65 @@ html {
 
 /* Education Section Styling */
 .education-item {
-  background: #f8f9fa;
+  background: rgba(40, 40, 40, 0.8);
   padding: 25px;
   border-radius: 15px;
   margin-bottom: 25px;
-  border-left: 5px solid #667eea;
+  border-left: 5px solid #ffcc00;
   transition: transform 0.3s ease;
+  border: 1px solid #333;
 }
 
 .education-item:hover {
   transform: translateX(10px);
+  box-shadow: 0 5px 20px rgba(255, 204, 0, 0.2);
 }
 
 .education-item h3 {
-  color: #333;
+  color: #ffcc00;
   margin-bottom: 10px;
   font-size: 1.5em;
 }
 
 .institution {
-  color: #667eea;
+  color: #ffcc00;
   font-weight: 600;
   font-size: 1.1em;
   margin-bottom: 5px;
 }
 
 .duration {
-  color: #666;
+  color: #999;
   font-style: italic;
   margin-bottom: 5px;
 }
 
 .grade {
-  color: #28a745;
+  color: #4CAF50;
   font-weight: 600;
   margin-bottom: 10px;
 }
 
 .board {
-  color: #666;
+  color: #999;
   margin-bottom: 10px;
 }
 
 .description {
-  color: #444;
+  color: #cccccc;
   line-height: 1.6;
 }
 
 .relevant-coursework {
   margin-top: 30px;
   padding: 20px;
-  background: #f8f9fa;
+  background: rgba(40, 40, 40, 0.8);
   border-radius: 10px;
+  border: 1px solid #333;
 }
 
 .relevant-coursework h4 {
-  color: #333;
+  color: #ffcc00;
   margin-bottom: 15px;
   font-size: 1.3em;
 }
@@ -744,12 +753,12 @@ html {
   padding: 8px 0;
   padding-left: 25px;
   position: relative;
-  color: #444;
+  color: #cccccc;
 }
 
 .relevant-coursework li:before {
   content: "▸";
-  color: #667eea;
+  color: #ffcc00;
   position: absolute;
   left: 0;
   font-weight: bold;
@@ -764,13 +773,13 @@ html {
 }
 
 .skill-card {
-  background: white;
+  background: rgba(30, 30, 30, 0.9);
   padding: 30px 25px;
   border-radius: 15px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
   text-align: center;
   transition: all 0.3s ease;
-  border: 1px solid #e9ecef;
+  border: 1px solid #333;
   position: relative;
   overflow: hidden;
 }
@@ -782,12 +791,13 @@ html {
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(45deg, #667eea, #764ba2);
+  background: linear-gradient(45deg, #ffcc00, #ffaa00);
 }
 
 .skill-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+  box-shadow: 0 15px 30px rgba(255, 204, 0, 0.2);
+  border-color: #ffcc00;
 }
 
 .skill-icon {
@@ -809,14 +819,14 @@ html {
 .skill-card:nth-child(8) .skill-icon { color: #f05032; } /* Git */
 
 .skill-card h3 {
-  color: #333;
+  color: #ffcc00;
   margin-bottom: 15px;
   font-size: 1.4em;
   font-weight: 600;
 }
 
 .skill-card p {
-  color: #666;
+  color: #cccccc;
   line-height: 1.6;
   margin-bottom: 20px;
   font-size: 0.95em;
@@ -832,20 +842,20 @@ html {
 .level-bar {
   flex: 1;
   height: 8px;
-  background: #e9ecef;
+  background: #333;
   border-radius: 10px;
   overflow: hidden;
 }
 
 .level-progress {
   height: 100%;
-  background: linear-gradient(45deg, #667eea, #764ba2);
+  background: linear-gradient(45deg, #ffcc00, #ffaa00);
   border-radius: 10px;
   transition: width 1s ease-in-out;
 }
 
 .skill-level span {
-  color: #333;
+  color: #ffcc00;
   font-weight: 600;
   font-size: 0.9em;
   min-width: 40px;
@@ -897,12 +907,12 @@ html {
 }
 
 .project-card {
-  background: white;
+  background: rgba(30, 30, 30, 0.9);
   border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   overflow: hidden;
   transition: all 0.3s ease;
-  border: 1px solid #e9ecef;
+  border: 1px solid #333;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -910,12 +920,13 @@ html {
 
 .project-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  box-shadow: 0 20px 40px rgba(255, 204, 0, 0.2);
+  border-color: #ffcc00;
 }
 
 .project-image {
   height: 120px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #1a1a1a 0%, #ffcc00 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -930,18 +941,19 @@ html {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(255,255,255,0.1);
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .project-image i {
   font-size: 3em;
-  color: white;
+  color: #ffcc00;
   z-index: 1;
   transition: transform 0.3s ease;
 }
 
 .project-card:hover .project-image i {
   transform: scale(1.2);
+  color: #ffffff;
 }
 
 .project-content {
@@ -952,14 +964,14 @@ html {
 }
 
 .project-content h3 {
-  color: #333;
+  color: #ffcc00;
   margin-bottom: 15px;
   font-size: 1.5em;
   font-weight: 600;
 }
 
 .project-content p {
-  color: #666;
+  color: #cccccc;
   line-height: 1.6;
   margin-bottom: 20px;
   flex-grow: 1;
@@ -973,19 +985,19 @@ html {
 }
 
 .tech-tag {
-  background: #f8f9fa;
-  color: #667eea;
+  background: rgba(255, 204, 0, 0.1);
+  color: #ffcc00;
   padding: 5px 12px;
   border-radius: 20px;
   font-size: 0.8em;
   font-weight: 500;
-  border: 1px solid #e9ecef;
+  border: 1px solid rgba(255, 204, 0, 0.3);
   transition: all 0.3s ease;
 }
 
 .tech-tag:hover {
-  background: #667eea;
-  color: white;
+  background: #ffcc00;
+  color: #000000;
   transform: translateY(-2px);
 }
 
@@ -996,12 +1008,12 @@ html {
 }
 
 .project-link {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
+  background: linear-gradient(135deg, #ffcc00, #ffaa00);
+  color: #000000;
   padding: 10px 20px;
   border-radius: 25px;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
   transition: all 0.3s ease;
   flex: 1;
   text-align: center;
@@ -1010,19 +1022,20 @@ html {
 
 .project-link:hover {
   transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+  box-shadow: 0 5px 15px rgba(255, 204, 0, 0.4);
+  background: linear-gradient(135deg, #ffaa00, #ffcc00);
 }
 
 .project-link:nth-child(2) {
-  background: #f8f9fa;
-  color: #333;
-  border: 1px solid #e9ecef;
+  background: rgba(255, 204, 0, 0.1);
+  color: #ffcc00;
+  border: 1px solid rgba(255, 204, 0, 0.3);
 }
 
 .project-link:nth-child(2):hover {
-  background: #667eea;
-  color: white;
-  border-color: #667eea;
+  background: #ffcc00;
+  color: #000000;
+  border-color: #ffcc00;
 }
 
 /* Responsive Design for Projects */
