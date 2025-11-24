@@ -83,3 +83,43 @@ document.addEventListener('keydown', (e) => {
     closeModal();
   }
 });
+
+// Theme Toggle Functionality
+document.addEventListener('DOMContentLoaded', function() {
+  const themeToggle = document.getElementById('themeToggle');
+  const themeToggleMobile = document.getElementById('themeToggleMobile');
+  
+  function initializeTheme() {
+    const currentTheme = localStorage.getItem('theme') || 'dark';
+    document.documentElement.setAttribute('data-theme', currentTheme);
+    updateThemeIcons(currentTheme);
+  }
+  
+  function updateThemeIcons(theme) {
+    const icons = document.querySelectorAll('.theme-toggle i, .theme-toggle-mobile i');
+    icons.forEach(icon => {
+      icon.className = theme === 'dark' ? 'fas fa-moon' : 'fas fa-sun';
+    });
+  }
+  
+  function toggleTheme() {
+    const currentTheme = document.documentElement.getAttribute('data-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    
+    document.documentElement.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+    updateThemeIcons(newTheme);
+  }
+  
+  // Initialize theme
+  initializeTheme();
+  
+  // Add event listeners to both toggle buttons
+  if (themeToggle) {
+    themeToggle.addEventListener('click', toggleTheme);
+  }
+  
+  if (themeToggleMobile) {
+    themeToggleMobile.addEventListener('click', toggleTheme);
+  }
+});
